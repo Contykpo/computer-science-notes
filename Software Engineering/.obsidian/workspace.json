@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2 - Source Material/Software Development.md",
+                "file": "1 - Rough Notes/Ideas from a specific content.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2 - Source Material/Software Development.md",
+                "file": "1 - Rough Notes/Ideas from a specific content.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "2 - Source Material/Software Development.md",
+                "file": "1 - Rough Notes/Ideas from a specific content.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "2 - Source Material/Software Development.md"
+                "file": "1 - Rough Notes/Ideas from a specific content.md"
               }
             }
           }
@@ -148,13 +148,16 @@
   },
   "active": "c3368288f9de306b",
   "lastOpenFiles": [
+    "4 - Indexes/Untitled.md",
+    "3 - Tags/Tags.md",
+    "1 - Rough Notes/Ideas from a specific content.md",
+    "2 - Source Material/Software Development.md",
     "2 - Source Material/Software Development & Software Engineering.md",
     "2 - Source Material/Definition of Software.canvas",
     "7 - Resources/Definition of Software/Accidental Complexity.png",
     "7 - Resources/Definition of Software",
     "7 - Resources",
     "2 - Source Material/Modern Software Engineering.md",
-    "2 - Source Material/Software Development.md",
     "7 - Resources/Definition of Software/smalltalk 2.png",
     "7 - Resources/Definition of Software/Go.png",
     "7 - Resources/Definition of Software/java-pre-1.8.png",

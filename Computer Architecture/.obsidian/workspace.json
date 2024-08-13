@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "6 - Main Notes/Primer Tema.md",
+                "file": "7 - Resources/Add images here.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "6 - Main Notes/Primer Tema.md",
+                "file": "7 - Resources/Add images here.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "6 - Main Notes/Primer Tema.md",
+                "file": "7 - Resources/Add images here.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "6 - Main Notes/Primer Tema.md"
+                "file": "7 - Resources/Add images here.md"
               }
             }
           }
@@ -146,10 +146,16 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "edfc71a132845314",
+  "active": "dc750b8ba71ba687",
   "lastOpenFiles": [
-    "5 - Templates/Full Note.md",
+    "4 - Indexes/Index.md",
+    "7 - Resources/Add images here.md",
+    "7 - Resources",
+    "3 - Tags/Tags.md",
+    "2 - Source Material/First class.md",
+    "1 - Rough Notes/Ideas from a specific content.md",
     "6 - Main Notes/Primer Tema.md",
+    "5 - Templates/Full Note.md",
     "Welcome.md",
     "6 - Main Notes",
     "5 - Templates",
