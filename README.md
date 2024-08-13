@@ -2,5 +2,16 @@
 
 Notes and useful media related to subjects and fields of study in Computer Science (UBA)
 
-IMPORTANT: Most subject study notes will be stored inside the Obsidian Vault '[Notes](https://github.com/Contykpo/introduction-to-algorithms/tree/main/Notes/)' until futures updates.
-TO-DO: Consider to diversify the study notes by subject / field of study if the Obsidian Vault grows too large.
+## Contents
+
+### Obsidian-Vaults for each subject:
+
+- [Computer Architecture](https://github.com/Contykpo/computer-science-notes/tree/main/Computer%20Architecture/).
+- [Software Engineering](https://github.com/Contykpo/computer-science-notes/tree/main/Software%20Engineering/).
+- [Formal Languages and Automata Theory](https://github.com/Contykpo/computer-science-notes/tree/main/Formal%20Languages/).
+- [Architecture of Web Applications](https://github.com/Contykpo/computer-science-notes/tree/main/Web%20Applications/).
+
+##
+
+IMPORTANT: Most subject study notes will be stored inside Obsidian-Vaults until future updates.
+TO-DO: Consider to diversify the study notes by subject / field of study if the Obsidian-Vaults grow too large.
