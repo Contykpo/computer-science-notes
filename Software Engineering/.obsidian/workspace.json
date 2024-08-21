@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "4916490abf4a295f",
+        "id": "d5aeb1c2a40ab405",
         "type": "tabs",
         "children": [
           {
-            "id": "c3368288f9de306b",
+            "id": "1ffe59bd0eb01720",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "1 - Rough Notes/Ideas from a specific content.md",
+                "file": "2 - Source Material/Programming as Theory Building.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "1 - Rough Notes/Ideas from a specific content.md",
+                "file": "2 - Source Material/Programming as Theory Building.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "1 - Rough Notes/Ideas from a specific content.md",
+                "file": "2 - Source Material/Programming as Theory Building.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "1 - Rough Notes/Ideas from a specific content.md"
+                "file": "2 - Source Material/Programming as Theory Building.md"
               }
             }
           }
@@ -146,25 +146,27 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "c3368288f9de306b",
+  "active": "1ffe59bd0eb01720",
   "lastOpenFiles": [
-    "4 - Indexes/Untitled.md",
-    "3 - Tags/Tags.md",
-    "1 - Rough Notes/Ideas from a specific content.md",
-    "2 - Source Material/Software Development.md",
-    "2 - Source Material/Software Development & Software Engineering.md",
+    "2 - Source Material/Programming as Theory Building.md",
+    "6 - Main Notes/What is a Good Model?.md",
     "2 - Source Material/Definition of Software.canvas",
+    "3 - Tags/Tags.md",
+    "6 - Main Notes/What is Software Development?.md",
+    "2 - Source Material/Software Development & Software Engineering.md",
+    "2 - Source Material/Software Development.md",
+    "2 - Source Material/Modern Software Engineering.md",
+    "1 - Rough Notes/Ideas from a specific content.md",
+    "4 - Indexes/Untitled.md",
     "7 - Resources/Definition of Software/Accidental Complexity.png",
     "7 - Resources/Definition of Software",
     "7 - Resources",
-    "2 - Source Material/Modern Software Engineering.md",
     "7 - Resources/Definition of Software/smalltalk 2.png",
     "7 - Resources/Definition of Software/Go.png",
     "7 - Resources/Definition of Software/java-pre-1.8.png",
     "7 - Resources/Definition of Software/smalltalk 1.png",
     "7 - Resources/Definition of Software/smalltalk.png",
     "7 - Resources/Definition of Software/software-definition.png",
-    "6 - Main Notes/Primer Tema.md",
     "5 - Templates/Full Note.md",
     "Welcome.md",
     "6 - Main Notes",
