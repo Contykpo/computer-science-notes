@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2 - Source Material/Programming as Theory Building.md",
+                "file": "6 - Main Notes/Object Oriented Paradigm.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2 - Source Material/Programming as Theory Building.md",
+                "file": "6 - Main Notes/Object Oriented Paradigm.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "2 - Source Material/Programming as Theory Building.md",
+                "file": "6 - Main Notes/Object Oriented Paradigm.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "2 - Source Material/Programming as Theory Building.md"
+                "file": "6 - Main Notes/Object Oriented Paradigm.md"
               }
             }
           }
@@ -148,6 +148,8 @@
   },
   "active": "1ffe59bd0eb01720",
   "lastOpenFiles": [
+    "1 - Rough Notes/Ideas from a specific content.md",
+    "6 - Main Notes/Object Oriented Paradigm.md",
     "2 - Source Material/Programming as Theory Building.md",
     "6 - Main Notes/What is a Good Model?.md",
     "2 - Source Material/Definition of Software.canvas",
@@ -156,7 +158,6 @@
     "2 - Source Material/Software Development & Software Engineering.md",
     "2 - Source Material/Software Development.md",
     "2 - Source Material/Modern Software Engineering.md",
-    "1 - Rough Notes/Ideas from a specific content.md",
     "4 - Indexes/Untitled.md",
     "7 - Resources/Definition of Software/Accidental Complexity.png",
     "7 - Resources/Definition of Software",
