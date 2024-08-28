@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "6 - Main Notes/Object Oriented Paradigm.md",
+                "file": "2 - Source Material/No Silver Bullet - Essence and Accident in Software Engineering.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "6 - Main Notes/Object Oriented Paradigm.md",
+                "file": "2 - Source Material/No Silver Bullet - Essence and Accident in Software Engineering.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "6 - Main Notes/Object Oriented Paradigm.md",
+                "file": "2 - Source Material/No Silver Bullet - Essence and Accident in Software Engineering.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "6 - Main Notes/Object Oriented Paradigm.md"
+                "file": "2 - Source Material/No Silver Bullet - Essence and Accident in Software Engineering.md"
               }
             }
           }
@@ -148,8 +148,13 @@
   },
   "active": "1ffe59bd0eb01720",
   "lastOpenFiles": [
-    "1 - Rough Notes/Ideas from a specific content.md",
+    "5 - Templates/Full Note.md",
+    "2 - Source Material/No Silver Bullet - Essence and Accident in Software Engineering.md",
+    "6 - Main Notes/Closures in SmallTalk.md",
+    "6 - Main Notes/Relationship of Knowledge.md",
+    "6 - Main Notes/Modeling Rules (Heuristic).canvas",
     "6 - Main Notes/Object Oriented Paradigm.md",
+    "1 - Rough Notes/Ideas from a specific content.md",
     "2 - Source Material/Programming as Theory Building.md",
     "6 - Main Notes/What is a Good Model?.md",
     "2 - Source Material/Definition of Software.canvas",
@@ -168,7 +173,6 @@
     "7 - Resources/Definition of Software/smalltalk 1.png",
     "7 - Resources/Definition of Software/smalltalk.png",
     "7 - Resources/Definition of Software/software-definition.png",
-    "5 - Templates/Full Note.md",
     "Welcome.md",
     "6 - Main Notes",
     "5 - Templates",

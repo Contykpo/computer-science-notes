@@ -1,0 +1,11 @@
+{
+	"nodes":[
+		{"id":"be57aed5218cb965","x":-520,"y":-260,"width":440,"height":300,"color":"5","type":"text","text":"# Coupling:\n\n#### It refers to the interference that various objects have with each other.\n\n#### It is IMPORTANT to reduce #Coupling as much as possible.\n#### (In computer programming, no matter the language).\n\n"},
+		{"id":"edb504ca9934c996","x":-20,"y":-260,"width":440,"height":300,"color":"3","type":"text","text":"# Cohesion\n\n#### It refers to the fact that the functionalities externally related to the concept of an object are separated. And there is no object whose functionality is over-representative of the real world in the #Problem-Domain."},
+		{"id":"9673c6f862676744","x":-260,"y":180,"width":460,"height":220,"color":"4","type":"text","text":"# Heuristic\n\n#### Rules to use in the context of #Modeling and Design of a solution, based on the current context and what is only inside the #Problem-Domain."}
+	],
+	"edges":[
+		{"id":"afc333b56f215b88","fromNode":"be57aed5218cb965","fromSide":"bottom","toNode":"9673c6f862676744","toSide":"top","color":"5"},
+		{"id":"f73542cec310aa25","fromNode":"edb504ca9934c996","fromSide":"bottom","toNode":"9673c6f862676744","toSide":"top","color":"3"}
+	]
+}
