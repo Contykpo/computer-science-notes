@@ -11,11 +11,14 @@
             "id": "a3954af22bc64a6c",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "canvas",
               "state": {
-                "file": "6 - Main Notes/Types of Memory and Memory Segments.md",
-                "mode": "source",
-                "source": false
+                "file": "2 - Source Material/The Stack in IA-32 & I64.canvas",
+                "viewState": {
+                  "x": 160.97497285370437,
+                  "y": 2216.852628173354,
+                  "zoom": -0.8000000000000002
+                }
               }
             }
           }
@@ -85,7 +88,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "6 - Main Notes/Types of Memory and Memory Segments.md",
+                "file": "2 - Source Material/The Stack in IA-32 & I64.canvas",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +105,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "6 - Main Notes/Types of Memory and Memory Segments.md",
+                "file": "2 - Source Material/The Stack in IA-32 & I64.canvas",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +128,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "6 - Main Notes/Types of Memory and Memory Segments.md"
+                "file": "2 - Source Material/The Stack in IA-32 & I64.canvas"
               }
             }
           }
@@ -148,22 +151,32 @@
   },
   "active": "a3954af22bc64a6c",
   "lastOpenFiles": [
-    "2 - Source Material/Memory Segments.canvas",
+    "7 - Resources/Stack-Push-Pop-Operations.png",
+    "7 - Resources/Stack.png",
+    "7 - Resources/Stack-Alignment.png",
+    "2 - Source Material/The Stack in IA-32 & Intel 64 Processors.md",
+    "2 - Source Material/The Stack in IA-32 & I64.canvas",
+    "6 - Main Notes/Linker.md",
+    "6 - Main Notes/Compiler.md",
+    "3 - Tags/Tags.md",
+    "5 - Templates/Full Note.md",
     "6 - Main Notes/Types of Memory and Memory Segments.md",
-    "7 - Resources/Memory-Segments.png",
     "6 - Main Notes/Structures.md",
+    "6 - Main Notes/Memory Alignment.md",
+    "4 - Indexes/Index.md",
+    "2 - Source Material/First class.md",
+    "2 - Source Material/Development Process.canvas",
+    "7 - Resources/Compiler.png",
+    "7 - Resources/Development-Process.png",
+    "2 - Source Material/Memory Segments.canvas",
+    "7 - Resources/Memory-Segments.png",
     "2 - Source Material/Memory Layout.canvas",
     "7 - Resources/Memory-Layout.png",
-    "6 - Main Notes/Memory Alignment.md",
     "2 - Source Material/Little Endian.canvas",
     "7 - Resources/Little-Endian-Table.png",
-    "2 - Source Material/First class.md",
     "7 - Resources/Add images here.md",
-    "4 - Indexes/Index.md",
     "7 - Resources",
-    "3 - Tags/Tags.md",
     "1 - Rough Notes/Ideas from a specific content.md",
-    "5 - Templates/Full Note.md",
     "Welcome.md",
     "6 - Main Notes",
     "5 - Templates",
