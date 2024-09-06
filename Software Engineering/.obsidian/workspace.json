@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2 - Source Material/No Silver Bullet - Essence and Accident in Software Engineering.md",
+                "file": "6 - Main Notes/Design.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2 - Source Material/No Silver Bullet - Essence and Accident in Software Engineering.md",
+                "file": "6 - Main Notes/Design.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "2 - Source Material/No Silver Bullet - Essence and Accident in Software Engineering.md",
+                "file": "6 - Main Notes/Design.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "2 - Source Material/No Silver Bullet - Essence and Accident in Software Engineering.md"
+                "file": "6 - Main Notes/Design.md"
               }
             }
           }
@@ -148,20 +148,24 @@
   },
   "active": "1ffe59bd0eb01720",
   "lastOpenFiles": [
-    "5 - Templates/Full Note.md",
-    "2 - Source Material/No Silver Bullet - Essence and Accident in Software Engineering.md",
-    "6 - Main Notes/Closures in SmallTalk.md",
-    "6 - Main Notes/Relationship of Knowledge.md",
     "6 - Main Notes/Modeling Rules (Heuristic).canvas",
-    "6 - Main Notes/Object Oriented Paradigm.md",
-    "1 - Rough Notes/Ideas from a specific content.md",
-    "2 - Source Material/Programming as Theory Building.md",
-    "6 - Main Notes/What is a Good Model?.md",
-    "2 - Source Material/Definition of Software.canvas",
     "3 - Tags/Tags.md",
-    "6 - Main Notes/What is Software Development?.md",
-    "2 - Source Material/Software Development & Software Engineering.md",
+    "6 - Main Notes/Design.md",
+    "2 - Source Material/Self - The Power of Simplicity.md",
     "2 - Source Material/Software Development.md",
+    "1 - Rough Notes/Automated Refactoring.md",
+    "6 - Main Notes/Variables and Pseudo-variables in Object Oriented Programming.md",
+    "1 - Rough Notes/Ideas from other more specific and deep notes.md",
+    "6 - Main Notes/What is Software Development?.md",
+    "6 - Main Notes/What is a Good Model?.md",
+    "6 - Main Notes/Relationship of Knowledge.md",
+    "6 - Main Notes/Object Oriented Paradigm.md",
+    "6 - Main Notes/Closures in SmallTalk.md",
+    "2 - Source Material/No Silver Bullet - Essence and Accident in Software Engineering.md",
+    "5 - Templates/Full Note.md",
+    "2 - Source Material/Programming as Theory Building.md",
+    "2 - Source Material/Definition of Software.canvas",
+    "2 - Source Material/Software Development & Software Engineering.md",
     "2 - Source Material/Modern Software Engineering.md",
     "4 - Indexes/Untitled.md",
     "7 - Resources/Definition of Software/Accidental Complexity.png",
