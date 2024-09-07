@@ -1,0 +1,39 @@
+{
+	"nodes":[
+		{"id":"9d07a03cc42cd43d","type":"group","x":280,"y":-445,"width":610,"height":705,"color":"4","label":"Problem Domain"},
+		{"id":"0d4bd5982f9a59d7","type":"group","x":-440,"y":-445,"width":610,"height":705,"color":"2","label":"Computable Model / Aristotle Model"},
+		{"id":"c21d5273c1a6b491","x":-960,"y":472,"width":967,"height":210,"color":"4","type":"group","label":"Integer answers to the same messages as Number"},
+		{"id":"e00439badda406a2","x":-283,"y":472,"width":783,"height":210,"color":"3","type":"group","label":"Float answers to the same messages as Number"},
+		{"id":"d630561a74896278","type":"text","text":"# A real chair","x":300,"y":-425,"width":250,"height":60},
+		{"id":"bff743d97d3e0eb3","type":"text","text":"# An other real chair","x":620,"y":-365,"width":250,"height":85},
+		{"id":"b66901e5b3385d4c","type":"text","text":"# Chair_1","x":-382,"y":-425,"width":184,"height":50},
+		{"id":"01f20feb29866c66","type":"text","text":"# Chair_2","x":-157,"y":-425,"width":184,"height":50},
+		{"id":"fa540d11878564cb","type":"text","text":"# Class","x":-394,"y":55,"width":160,"height":50},
+		{"id":"2a5f932818952795","type":"text","text":"The class class is an instance of itself.","x":-340,"y":135,"width":255,"height":70},
+		{"id":"61af5203d7e19fef","type":"text","text":"# Chair","x":-213,"y":-85,"width":148,"height":50},
+		{"id":"8a4774391dcd10b6","type":"text","text":"# Instances","x":-720,"y":-322,"width":250,"height":53,"color":"3"},
+		{"id":"2b5d082771e0acf9","type":"text","text":"# Classes","x":-720,"y":-60,"width":250,"height":60,"color":"3"},
+		{"id":"099c9998b041bd94","type":"text","text":"# Lavor","x":920,"y":-322,"width":250,"height":53,"color":"5"},
+		{"id":"d6d6ec67ee234afa","type":"text","text":"# Ideas","x":920,"y":-60,"width":250,"height":60,"color":"5"},
+		{"id":"989b2e3aee923534","type":"text","text":"# Idea of Chair","x":460,"y":-35,"width":250,"height":60},
+		{"id":"e75e7870866b31f1","x":-238,"y":492,"width":198,"height":50,"color":"2","type":"text","text":"# Number"},
+		{"id":"be1ce458fc5881d8","x":-574,"y":602,"width":180,"height":60,"color":"4","type":"text","text":"# Integer"},
+		{"id":"b8d2632094cce226","x":120,"y":602,"width":145,"height":60,"color":"3","type":"text","text":"# Float"},
+		{"id":"d1e1d7cc76275c6a","x":-263,"y":584,"width":250,"height":60,"color":"2","type":"text","text":"Answers to messages:\n+, -, *, /"}
+	],
+	"edges":[
+		{"id":"c363f50ee11d6d4e","fromNode":"61af5203d7e19fef","fromSide":"left","toNode":"fa540d11878564cb","toSide":"top","color":"6","label":"Inherits from"},
+		{"id":"deaed02899fb11f9","fromNode":"2a5f932818952795","fromSide":"right","toNode":"fa540d11878564cb","toSide":"right","color":"6"},
+		{"id":"cc75281067ab337f","fromNode":"fa540d11878564cb","fromSide":"left","toNode":"2a5f932818952795","toSide":"left","color":"6"},
+		{"id":"dd7de289e28fd6a4","fromNode":"d630561a74896278","fromSide":"left","toNode":"01f20feb29866c66","toSide":"right"},
+		{"id":"617829ca38e94130","fromNode":"bff743d97d3e0eb3","fromSide":"left","toNode":"b66901e5b3385d4c","toSide":"right"},
+		{"id":"861de2458a823b60","fromNode":"d630561a74896278","fromSide":"bottom","toNode":"989b2e3aee923534","toSide":"top","color":"5"},
+		{"id":"4aab8a72302f3260","fromNode":"bff743d97d3e0eb3","fromSide":"bottom","toNode":"989b2e3aee923534","toSide":"top","color":"5"},
+		{"id":"2ffd593da40869f7","fromNode":"b66901e5b3385d4c","fromSide":"bottom","toNode":"61af5203d7e19fef","toSide":"top","color":"3"},
+		{"id":"f51c32157b6e5908","fromNode":"01f20feb29866c66","fromSide":"bottom","toNode":"61af5203d7e19fef","toSide":"top","color":"3"},
+		{"id":"9fe61bc976882809","fromNode":"0d4bd5982f9a59d7","fromSide":"bottom","toNode":"e75e7870866b31f1","toSide":"top","color":"2","label":"Another example of Aristotle Model"},
+		{"id":"4acbfc30e3eb54c1","fromNode":"e75e7870866b31f1","fromSide":"left","toNode":"be1ce458fc5881d8","toSide":"top","color":"6"},
+		{"id":"bc9ce3c7ec640c8c","fromNode":"e75e7870866b31f1","fromSide":"right","toNode":"b8d2632094cce226","toSide":"top","color":"6"},
+		{"id":"752ce113244e5775","fromNode":"e75e7870866b31f1","fromSide":"bottom","toNode":"d1e1d7cc76275c6a","toSide":"top","color":"2"}
+	]
+}
