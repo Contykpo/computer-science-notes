@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "6 - Main Notes/Design.md",
+                "file": "6 - Main Notes/Singleton Programming Pattern.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "6 - Main Notes/Design.md",
+                "file": "6 - Main Notes/Singleton Programming Pattern.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "6 - Main Notes/Design.md",
+                "file": "6 - Main Notes/Singleton Programming Pattern.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "6 - Main Notes/Design.md"
+                "file": "6 - Main Notes/Singleton Programming Pattern.md"
               }
             }
           }
@@ -148,9 +148,11 @@
   },
   "active": "1ffe59bd0eb01720",
   "lastOpenFiles": [
-    "6 - Main Notes/Aristotle Model.canvas",
     "3 - Tags/Tags.md",
+    "6 - Main Notes/Singleton Programming Pattern.md",
+    "4 - Indexes/Untitled.md",
     "6 - Main Notes/Design.md",
+    "6 - Main Notes/Aristotle Model.canvas",
     "6 - Main Notes/Modeling Rules (Heuristic).canvas",
     "6 - Main Notes/Relationship of Knowledge.md",
     "6 - Main Notes/Variables and Pseudo-variables in Object Oriented Programming.md",
@@ -168,7 +170,6 @@
     "2 - Source Material/Definition of Software.canvas",
     "2 - Source Material/Software Development & Software Engineering.md",
     "2 - Source Material/Modern Software Engineering.md",
-    "4 - Indexes/Untitled.md",
     "7 - Resources/Definition of Software/Accidental Complexity.png",
     "7 - Resources/Definition of Software",
     "7 - Resources",
