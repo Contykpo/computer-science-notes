@@ -6,4 +6,4 @@
 #Object-Oriented-Paradigm #Smalltalk #Variables #Closures #Non-Local-Return
 #Stack-Frame 
 
-#Programming-Pattern #Prototype-Pattern #Singleton-Pattern #Abstract-Pattern
+#Programming-Pattern #Prototype-Pattern #Singleton-Pattern #Adapter-Pattern
