@@ -1,9 +1,9 @@
 
 #Complete #In-Production 
 
-#Software-Development #Software-Engineering #Problem-Domain #Computable-Model #Relationship-of-Knowledge #Design #Code-Repetition #Abstraction #Coupling #Aristotle-Model
+#Software-Development #Software-Engineering #Problem-Domain #Computable-Model #Relationship-of-Knowledge #Design #Code-Repetition #Abstraction #Coupling #Aristotle-Model #Heuristics  #Atomic-Modification 
 
 #Object-Oriented-Paradigm #Smalltalk #Variables #Closures #Non-Local-Return
-#Stack-Frame 
+#Stack-Frame #Whole-Objects #Valid-Objects #Immutable-Object #null #Getters #Setters #If-conditional #Data-Structure 
 
-#Programming-Pattern #Prototype-Pattern #Singleton-Pattern #Adapter-Pattern
+#Programming-Pattern #Prototype-Pattern #Singleton-Pattern #Adapter-Pattern #Builder-Pattern #Option-Pattern #Factory-Method-Pattern #Abstract-Factory-Pattern #Visitor-Pattern #Double-Dispatch #Composite-Pattern

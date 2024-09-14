@@ -13,7 +13,7 @@ In the foundational object paradigm, a variable is a reference to an object, and
 
 Pseudo-variables in the foundational OOP, are variables that doesn't need to be defined, nor initialized, these variables are known as:
 
-- **Self**: Its the reference that an object has to itself, that is how an object can send messages to itself.
+- **Super / Self**: Its the reference that an object has to itself, that is how an object can send messages to itself. ''Super" references an **instance of the parent class**. In other words, it looks for an instance of the super class of the class where the calling method is defined.
 - **This Context**: In general, the area which holds the local variables of a particular method or block is called a #Stack-Frame. In #Smalltalk or the foundational OOP in general, these are **accessible to the program as objects** an are called **contexts**.
 
 # Equality and Identity:
