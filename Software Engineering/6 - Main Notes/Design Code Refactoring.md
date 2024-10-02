@@ -26,6 +26,9 @@ These are steps to deal with #Code-Repetition:
 5. **Replace** the **if/conditional** with the sending of the polymorphic message.
 6. **Find** the polymorphic object (optional).
 
+**Note for polymorphism and conditionals solutions**:  
+Always add an invalidation error at the end of an ifs-chain or a method using #Double-Dispatch if a type is not supported. This practice is known as #Fail-Fast : Inform immediately once an error occurs.
+
 #### Which are the limits on whether to eliminate an If or not?
 
 - System instances / objects.

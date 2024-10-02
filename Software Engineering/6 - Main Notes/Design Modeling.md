@@ -21,7 +21,13 @@ The current modeling theory being used for creating #Computable-Model s is the
 - **Aristotelian logic**, an object knows how to answer to all the messages that its class hierarchy responds to. (Example in the canvas).
 - **A problem with the Aristotelian model** is having to **name all the objects explicitly** to classify them, since it may be the case that they are later changed when expanding the concept or category of the class. 
 
-# Naming:
+# Modeling Strategies
+
+#### Metaphor:
+
+Sometimes it is simply ideal to think of a "real-world" solution to an **existing problem**, and then model it based on the entities present on that solution. That is why it is considered a "metaphor".
+
+# Naming in Modeling
 
 Message names should not only be self-explanatory, but should make sense in the #Problem-Domain. For example, when modeling a traffic light, a message blinkYellowLightHundredTimes does not tell you what happens, but rather what it does; a better name would be OnPowerWarning for an unary method of a message that executes the power-on process.
 

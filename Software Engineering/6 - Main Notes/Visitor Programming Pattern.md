@@ -45,14 +45,15 @@ g.accept(v);
 // Output: "Visited dot"
 ```
 
-#### Pros and Cons:
+#### Pros:
 
--  **_Open/Closed Principle_**: You can introduce a new behavior that can work with objects of different classes without changing these classes.
 -  **_Single Responsibility Principle_**: You can move multiple versions of the same behavior into the same class.
 -  A visitor object can accumulate some useful information while working with various objects. This might be handy when you want to traverse some complex object structure, such as an object tree, and apply the visitor to each object of this structure.
 
+#### Cons:
+
+-  **Violation of the Open / Closed Principle**: Since the Visitor Pattern uses #Double-Dispatch, you need to update all visitors each time a class gets added to or removed from the element hierarchy.
 - **Breaks Encapsulation**: The pattern forces the visitor to know details about each class it visits, which can break encapsulation.
--  You need to update all visitors each time a class gets added to or removed from the element hierarchy.
 -  Visitors might lack the necessary access to the private fields and methods of the elements that they’re supposed to work with.
 
 # Visitor Pattern Structure
@@ -79,6 +80,8 @@ The **Client** usually represents a collection or some other complex object (f
 
 # Applicability of the Visitor Pattern
 
+- When the elements are known in advance, but the operation can be extended. (e.g. planets are known in advance, whereas explorers are extendable).
+- When the type and name of the operation are unknown during runtime, but the correct method needs to be invoked. (e.g. the both types of planets and explorers are not known during runtime).
 -  Use the Visitor when you need to perform an operation on all elements of a complex object structure (for example, an object tree).
 	- The Visitor pattern lets you execute an operation over a set of objects with different classes by having a visitor object implement several variants of the same operation, which correspond to all target classes.
 - Use the Visitor to clean up the business logic of auxiliary behaviors.
