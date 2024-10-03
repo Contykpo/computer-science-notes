@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "6 - Main Notes/Test-driven Development.md",
+                "file": "6 - Main Notes/Replace Method with Method Object.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "6 - Main Notes/Test-driven Development.md",
+                "file": "6 - Main Notes/Replace Method with Method Object.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "6 - Main Notes/Test-driven Development.md",
+                "file": "6 - Main Notes/Replace Method with Method Object.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "6 - Main Notes/Test-driven Development.md"
+                "file": "6 - Main Notes/Replace Method with Method Object.md"
               }
             }
           }
@@ -149,11 +149,13 @@
   "active": "1ffe59bd0eb01720",
   "lastOpenFiles": [
     "3 - Tags/Tags.md",
-    "5 - Templates/Full Note.md",
-    "6 - Main Notes/Test-driven Development.md",
-    "6 - Main Notes/Design Code Refactoring.md",
-    "1 - Rough Notes/Testing.md",
+    "6 - Main Notes/Replace Method with Method Object.md",
     "1 - Rough Notes/Automated Refactoring.md",
+    "1 - Rough Notes/Ideas from other more specific and deep notes.md",
+    "1 - Rough Notes/Testing.md",
+    "6 - Main Notes/Test-driven Development.md",
+    "5 - Templates/Full Note.md",
+    "6 - Main Notes/Design Code Refactoring.md",
     "6 - Main Notes/Composite Programming Pattern.md",
     "6 - Main Notes/Design Heuristics.md",
     "6 - Main Notes/Design Modeling.md",
@@ -175,8 +177,6 @@
     "6 - Main Notes/Relationship of Knowledge.md",
     "6 - Main Notes/Design",
     "6 - Main Notes/Aristotle Model.canvas",
-    "1 - Rough Notes/Ideas from other more specific and deep notes.md",
-    "4 - Indexes/Untitled.md",
     "2 - Source Material/Definition of Software.canvas",
     "7 - Resources/Definition of Software/Accidental Complexity.png",
     "7 - Resources/Definition of Software",

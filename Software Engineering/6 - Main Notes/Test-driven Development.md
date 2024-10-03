@@ -3,7 +3,7 @@
 
 Status: #In-Production
 
-Tags: #Software-Development #Design #Test-driven-Development
+Tags: #Software-Development #Design #Test-driven-Development #Refactoring
 
 # The TDD Technique
 
