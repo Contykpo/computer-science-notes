@@ -3,7 +3,7 @@
 
 Status: #In-Production
 
-Tags: #Composite-Pattern #Data-Structure
+Tags: #Composite-Pattern #Data-Structure #Design-Pattern
 
 # Composite Structural Design Pattern
 

@@ -3,7 +3,7 @@
 
 Status: #In-Production
 
-Tags: #Visitor-Pattern #Double-Dispatch #Composite-Pattern
+Tags: #Visitor-Pattern #Double-Dispatch #Composite-Pattern #Design-Pattern 
 
 # Visitor Pattern
 

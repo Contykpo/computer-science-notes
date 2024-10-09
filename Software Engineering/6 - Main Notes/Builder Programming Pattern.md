@@ -3,7 +3,7 @@
 
 Status: #In-Production
 
-Tags: #Builder-Pattern #Whole-Objects #Valid-Objects #Factory-Method-Pattern#Singleton-Pattern
+Tags: #Builder-Pattern #Whole-Objects #Valid-Objects #Factory-Method-Pattern #Singleton-Pattern #Design-Pattern
 
 # Builder Pattern
 

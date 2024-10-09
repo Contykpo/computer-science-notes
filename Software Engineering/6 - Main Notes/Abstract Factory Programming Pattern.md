@@ -3,7 +3,7 @@
 
 Status: #In-Production
 
-Tags: #Abstract-Factory-Pattern #Factory-Method-Pattern #Builder-Pattern
+Tags: #Abstract-Factory-Pattern #Factory-Method-Pattern #Builder-Pattern #Design-Pattern
 
 # Abstract Factory Pattern
 

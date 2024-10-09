@@ -3,7 +3,7 @@
 
 Status: #In-Production
 
-Tags: #Programming-Pattern #Adapter-Pattern
+Tags: #Programming-Pattern #Adapter-Pattern #Design-Pattern
 
 # Adapter Pattern
 

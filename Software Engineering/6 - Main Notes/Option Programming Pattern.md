@@ -3,7 +3,7 @@
 
 Status: #In-Production
 
-Tags: #Option-Pattern #Builder-Pattern
+Tags: #Option-Pattern #Builder-Pattern #Design-Pattern 
 
 # Option Pattern
 

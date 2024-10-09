@@ -3,7 +3,7 @@
 
 Status: #In-Production
 
-Tags: #Factory-Method-Pattern 
+Tags: #Factory-Method-Pattern  #Design-Pattern
 
 # Factory Method
 

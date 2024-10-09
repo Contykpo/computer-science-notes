@@ -3,7 +3,7 @@
 
 Status: #In-Production
 
-Tags: #Programming-Pattern #Singleton-Pattern
+Tags: #Programming-Pattern #Singleton-Pattern #Design-Pattern 
 
 # Singleton Pattern
 
