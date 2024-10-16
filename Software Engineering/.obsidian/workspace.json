@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "6 - Main Notes/Decorator Pattern.md",
+                "file": "6 - Main Notes/State Programming Pattern.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "6 - Main Notes/Decorator Pattern.md",
+                "file": "6 - Main Notes/State Programming Pattern.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "6 - Main Notes/Decorator Pattern.md",
+                "file": "6 - Main Notes/State Programming Pattern.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "6 - Main Notes/Decorator Pattern.md"
+                "file": "6 - Main Notes/State Programming Pattern.md"
               }
             }
           }
@@ -148,33 +148,33 @@
   },
   "active": "1ffe59bd0eb01720",
   "lastOpenFiles": [
-    "6 - Main Notes/Design Code Refactoring.md",
-    "3 - Tags/Tags.md",
-    "6 - Main Notes/Decorator Pattern.md",
-    "6 - Main Notes/Builder Programming Pattern.md",
+    "6 - Main Notes/Test-driven Development.md",
+    "6 - Main Notes/Proxy Programming Pattern.md",
+    "6 - Main Notes/State Programming Pattern.md",
     "6 - Main Notes/IDIOM vs Framework vs Design Pattern.md",
+    "6 - Main Notes/Decorator Programming Pattern.md",
+    "6 - Main Notes/Object Recursion Pattern.md",
+    "6 - Main Notes/Object Oriented Paradigm.md",
+    "6 - Main Notes/Modeling Rules (Heuristic).canvas",
+    "6 - Main Notes/Design Code Refactoring.md",
+    "6 - Main Notes/Relationship of Knowledge.md",
+    "3 - Tags/Tags.md",
+    "5 - Templates/Full Note.md",
+    "6 - Main Notes/Adapter Programming Pattern.md",
+    "6 - Main Notes/Builder Programming Pattern.md",
     "6 - Main Notes/Visitor Programming Pattern.md",
     "6 - Main Notes/Singleton Programming Pattern.md",
     "6 - Main Notes/Option Programming Pattern.md",
-    "6 - Main Notes/Object Recursion Pattern.md",
-    "6 - Main Notes/Object Oriented Paradigm.md",
     "6 - Main Notes/Factory Programming Pattern.md",
     "6 - Main Notes/Composite Programming Pattern.md",
-    "6 - Main Notes/Adapter Programming Pattern.md",
     "6 - Main Notes/Abstract Factory Programming Pattern.md",
-    "6 - Main Notes/Test-driven Development.md",
     "6 - Main Notes/Replace Method with Method Object.md",
     "1 - Rough Notes/Automated Refactoring.md",
     "1 - Rough Notes/Ideas from other more specific and deep notes.md",
     "1 - Rough Notes/Testing.md",
-    "5 - Templates/Full Note.md",
     "6 - Main Notes/Design Heuristics.md",
     "6 - Main Notes/Design Modeling.md",
-    "6 - Main Notes/Modeling Rules (Heuristic).canvas",
     "6 - Main Notes/Closures in SmallTalk.md",
-    "2 - Source Material/SOLID Principles of Object Oriented Programming.md",
-    "2 - Source Material/Self - The Power of Simplicity.md",
-    "6 - Main Notes/Variables and Pseudo-variables in Object Oriented Programming.md",
     "6 - Main Notes/Design",
     "6 - Main Notes/Aristotle Model.canvas",
     "2 - Source Material/Definition of Software.canvas",

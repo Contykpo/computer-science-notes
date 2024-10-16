@@ -8,7 +8,8 @@ Tags: #Programming-Pattern #Adapter-Pattern #Design-Pattern
 # Adapter Pattern
 
 The #Adapter-Pattern converts the interface of a class into another interface that clients expect. This design pattern lets classes work together that couldn't otherwise because of incompatible interface.
-It acts as a bridge between two incompatible interfaces, enabling objects with different interfaces to collaborate. The Adapter pattern wraps an existing class with a new interface, making it compatible with the client's expectations.
+It acts as a bridge between two incompatible interfaces, enabling objects with different interfaces to collaborate. The Adapter pattern **wraps** an existing class with a new interface, making it compatible with the client's expectations.
+The **Adapter** object has a ***one-way relationship*** with the **Adaptee**.
 
 - **Compatibility**: Allows classes with incompatible interfaces to work together.
 - **Wrapper**: The Adapter pattern wraps an existing class to provide a new interface.
@@ -105,4 +106,4 @@ class Adapter implements Target
 
 # References
 
-- (Link Source material) with [[]].
+- [[Decorator Programming Pattern]].

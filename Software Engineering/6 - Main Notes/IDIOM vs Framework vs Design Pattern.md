@@ -40,5 +40,5 @@ It is not a concrete solution since it implements proprietary code. It is a way 
 # References
 
 - [[Builder Programming Pattern]].
-- [[Decorator Pattern]].
+- [[Decorator Programming Pattern]].
 - etc.
