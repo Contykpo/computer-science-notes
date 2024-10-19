@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "6 - Main Notes/State Programming Pattern.md",
+                "file": "6 - Main Notes/Dynamic Method Lookup.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "6 - Main Notes/State Programming Pattern.md",
+                "file": "6 - Main Notes/Dynamic Method Lookup.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "6 - Main Notes/State Programming Pattern.md",
+                "file": "6 - Main Notes/Dynamic Method Lookup.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "6 - Main Notes/State Programming Pattern.md"
+                "file": "6 - Main Notes/Dynamic Method Lookup.md"
               }
             }
           }
@@ -148,9 +148,11 @@
   },
   "active": "1ffe59bd0eb01720",
   "lastOpenFiles": [
+    "3 - Tags/Tags.md",
+    "6 - Main Notes/Dynamic Method Lookup.md",
+    "6 - Main Notes/State Programming Pattern.md",
     "6 - Main Notes/Test-driven Development.md",
     "6 - Main Notes/Proxy Programming Pattern.md",
-    "6 - Main Notes/State Programming Pattern.md",
     "6 - Main Notes/IDIOM vs Framework vs Design Pattern.md",
     "6 - Main Notes/Decorator Programming Pattern.md",
     "6 - Main Notes/Object Recursion Pattern.md",
@@ -158,7 +160,6 @@
     "6 - Main Notes/Modeling Rules (Heuristic).canvas",
     "6 - Main Notes/Design Code Refactoring.md",
     "6 - Main Notes/Relationship of Knowledge.md",
-    "3 - Tags/Tags.md",
     "5 - Templates/Full Note.md",
     "6 - Main Notes/Adapter Programming Pattern.md",
     "6 - Main Notes/Builder Programming Pattern.md",
@@ -174,7 +175,6 @@
     "1 - Rough Notes/Testing.md",
     "6 - Main Notes/Design Heuristics.md",
     "6 - Main Notes/Design Modeling.md",
-    "6 - Main Notes/Closures in SmallTalk.md",
     "6 - Main Notes/Design",
     "6 - Main Notes/Aristotle Model.canvas",
     "2 - Source Material/Definition of Software.canvas",
