@@ -1,0 +1,22 @@
+Listas Enlazadas:
+
+1. Esquema propuesto en la imagen 'diagram.png'.
+
+2. Cuando se crean listas en distintas ubicaciones, las variables se alojan en diferentes segmentos de memoria:
+
+a. mi_lista: Es un puntero que se aloja en el stack cuyo valor apunta a una dirección de memoria en el heap donde se almacena la estructura lista_t.
+b. mi_otra_lista: Es una estructura que se aloja en el stack, ya que es una variable automática dentro de una función.
+c. mi_otra_lista.head: Es un puntero que también se aloja en el stack, como parte de la estructura mi_otra_lista.
+d. mi_lista->head: Es un puntero y se aloja en el heap, ya que mi_lista apunta a una estructura lista_t que fue alojada dinámicamente.
+
+¿Y si a la lista mi_otra_lista la creamos fuera de cualquier función?
+Si mi_otra_lista se declara fuera de cualquier función, es decir, en el ámbito global, mi_otra_lista:
+Se alojaría en el segmento de datos (DATA) o segmento BSS si no está inicializada.
+
+Ejercicio Integrador:
+
+1. En C, no es necesario especificar el tamaño al declarar un string de antemano.
+Esto se debe a que los strings en C se representan como un puntero al primer elemento de un arreglo de caracteres terminados en con el elemento '\0', es decir, un carácter nulo.
+
+2. Una opcion seria retornar un arreglo bidimensional con los arreglos de vocales y consonantes.
+Otra opcion seria definir una estructura que tenga dos campos que sean punteros a los arreglos y devolver dicha estructura
