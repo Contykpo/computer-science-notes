@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "6 - Main Notes/Exceptions.md",
+                "file": "6 - Main Notes/Design Heuristics.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Exceptions"
+              "title": "Design Heuristics"
             }
           }
         ]
@@ -164,10 +164,11 @@
   },
   "active": "10ff683476a450c8",
   "lastOpenFiles": [
-    "6 - Main Notes/Object Contracts.md",
-    "6 - Main Notes/Exceptions.md",
-    "3 - Tags/Tags.md",
     "6 - Main Notes/Modeling Rules (Heuristic).canvas",
+    "6 - Main Notes/Design Heuristics.md",
+    "6 - Main Notes/Exceptions.md",
+    "6 - Main Notes/Object Contracts.md",
+    "3 - Tags/Tags.md",
     "6 - Main Notes/Dynamic Method Lookup.md",
     "6 - Main Notes/State Programming Pattern.md",
     "6 - Main Notes/Test-driven Development.md",
@@ -189,8 +190,6 @@
     "6 - Main Notes/Abstract Factory Programming Pattern.md",
     "6 - Main Notes/Replace Method with Method Object.md",
     "1 - Rough Notes/Automated Refactoring.md",
-    "1 - Rough Notes/Ideas from other more specific and deep notes.md",
-    "1 - Rough Notes/Testing.md",
     "6 - Main Notes/Design",
     "6 - Main Notes/Aristotle Model.canvas",
     "2 - Source Material/Definition of Software.canvas",
