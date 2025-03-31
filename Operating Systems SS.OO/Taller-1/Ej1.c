@@ -20,7 +20,8 @@ void validate_argc(int argc)
     if(argc != 4)
     {
         printf("%d\n",argc);
-        errno = EXIT_FAILURE;
+        
+	errno = EXIT_FAILURE;
         perror("Debe haber 3 argumentos unicamente.");
 
         exit(EXIT_FAILURE);
@@ -87,9 +88,9 @@ void create_child_processes()
 {
     for(; current_id < process_count; ++current_id)
     {
-        __pid_t newChildPID = fork();
+        __pid_t new_child_PID = fork();
 
-        if(newChildPID == 0)
+        if(new_child_PID == 0)
         {
             run_process();
 
@@ -98,20 +99,20 @@ void create_child_processes()
         }
         else
         {
-            children_PIDs[current_id] = newChildPID;
+            children_PIDs[current_id] = new_child_PID;
         }
     }
 }
 
 void term_handler_parent(int sig)
 {
-    __pid_t deadChildPID = wait(NULL);
+    __pid_t terminated_child_PID = wait(NULL);
 
     for(int i = 0; i < process_count; ++i)
     {
-        if(children_PIDs[i] == deadChildPID)
+        if(children_PIDs[i] == terminated_child_PID)
         {
-            terminated_children_PIDs[i] = deadChildPID;
+            terminated_children_PIDs[i] = terminated_child_PID;
         }
     }
 }
@@ -138,7 +139,7 @@ int main(int argc, char** argv)
         {
             wait(NULL);
 
-            printf("Sobreviviente: Identificador: %d, PID: %d\n", i, children_PIDs[i]);
+            printf("Sobreviviente: Id: %d, PID: %d\n", i, children_PIDs[i]);
         }
     }
 }
