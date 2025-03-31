@@ -1,4 +1,3 @@
-
 #include <unistd.h>
 #include <stdio.h>
 #include <stdlib.h>
@@ -7,22 +6,22 @@
 #include<time.h>
 #include <sys/wait.h>
 
-int processCount;
-int roundCount;
-int cursedNumber;
-int currentIdentifier = 0;
+int process_count;
+int round_count;
+int cursed_number;
+int current_id = 0;
 
-__pid_t childrenPIDs[10];
-__pid_t deadChildrenPIDs[10];
+__pid_t children_PIDs[10];
+__pid_t terminated_children_PIDs[10];
 
 void validate_argc(int argc)
 {
-    //Comparamos con 4 porque el primer arg es el nombre del binario
+    // First argument is the name of the binary (program).
     if(argc != 4)
     {
         printf("%d\n",argc);
         errno = EXIT_FAILURE;
-        perror("El numero de argumentos debe ser 3");
+        perror("Debe haber 3 argumentos unicamente.");
 
         exit(EXIT_FAILURE);
     }
@@ -30,14 +29,14 @@ void validate_argc(int argc)
 
 void validate_and_parse_argv(char** argv)
 {
-    processCount    = atoi(argv[1]);
-    roundCount      = atoi(argv[2]);
-    cursedNumber    = atoi(argv[3]);
+    process_count    = atoi(argv[1]);
+    round_count      = atoi(argv[2]);
+    cursed_number    = atoi(argv[3]);
 
-    if(processCount <= 0 || roundCount <= 0 || cursedNumber < 0 || cursedNumber >= processCount)
+    if(process_count <= 0 || round_count <= 0 || cursed_number < 0 || cursed_number >= process_count)
     {
         errno = EXIT_FAILURE;
-        perror("Entrada invalida, todos los argumentos deben ser no negativos y el numero maldito debe ser menor al numero de procesos");
+        perror("Entrada invalida, todos los argumentos deben ser no negativos y el numero maldito debe ser menor al numero de procesos.");
 
         exit(EXIT_FAILURE);
     }
@@ -45,9 +44,9 @@ void validate_and_parse_argv(char** argv)
 
 void run_round()
 {
-    for(int i = 0; i < processCount; ++i)
+    for(int i = 0; i < process_count; ++i)
     {
-        kill(childrenPIDs[i], SIGTERM);
+        kill(children_PIDs[i], SIGTERM);
 
         sleep(1);
     }
@@ -55,14 +54,14 @@ void run_round()
 
 int get_random_number()
 {
-    int result = rand() % processCount; 
+    int result = rand() % process_count; 
     
     return result;
 }
 
 void term_handler_child(int sig)
 {
-    if(get_random_number() == cursedNumber)
+    if(get_random_number() == cursed_number)
     {
         printf("Puta carajo\n");
 
@@ -79,12 +78,14 @@ void run_process()
     signal(SIGTERM, term_handler_child);
 
     while(1)
-        pause();
+    {
+	pause();
+    }
 }
 
 void create_child_processes()
 {
-    for(; currentIdentifier < processCount; ++currentIdentifier)
+    for(; current_id < process_count; ++current_id)
     {
         __pid_t newChildPID = fork();
 
@@ -97,7 +98,7 @@ void create_child_processes()
         }
         else
         {
-            childrenPIDs[currentIdentifier] = newChildPID;
+            children_PIDs[current_id] = newChildPID;
         }
     }
 }
@@ -106,11 +107,11 @@ void term_handler_parent(int sig)
 {
     __pid_t deadChildPID = wait(NULL);
 
-    for(int i = 0; i < processCount; ++i)
+    for(int i = 0; i < process_count; ++i)
     {
-        if(childrenPIDs[i] == deadChildPID)
+        if(children_PIDs[i] == deadChildPID)
         {
-            deadChildrenPIDs[i] = deadChildPID;
+            terminated_children_PIDs[i] = deadChildPID;
         }
     }
 }
@@ -124,19 +125,20 @@ int main(int argc, char** argv)
 
     create_child_processes();
 
-    for(; roundCount > 0; roundCount--)
-        run_round();
-
-    for(int i = 0; i < processCount; ++i)
+    for(; round_count > 0; round_count--)
     {
-        if(deadChildrenPIDs[i] == childrenPIDs[i])
-            continue;
+	run_round(); 
+    }
 
-        if(kill(childrenPIDs[i], SIGKILL) == 0)
+    for(int i = 0; i < process_count; ++i)
+    {
+        if(terminated_children_PIDs[i] == children_PIDs[i]) { continue; }
+
+        if(kill(children_PIDs[i], SIGKILL) == 0)
         {
             wait(NULL);
 
-            printf("Sobreviviente: Identificador: %d, PID: %d\n", i, childrenPIDs[i]);
+            printf("Sobreviviente: Identificador: %d, PID: %d\n", i, children_PIDs[i]);
         }
     }
 }
