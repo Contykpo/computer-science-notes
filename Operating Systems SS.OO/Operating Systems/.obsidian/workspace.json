@@ -1,24 +1,24 @@
 {
   "main": {
-    "id": "5a7688a152fddfc4",
+    "id": "175996e9cb71fc98",
     "type": "split",
     "children": [
       {
-        "id": "a81a9f254a8963bd",
+        "id": "eb481ec2bd1d1672",
         "type": "tabs",
         "children": [
           {
-            "id": "10ff683476a450c8",
+            "id": "ca51f19ec5650772",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "6 - Main Notes/Design Heuristics.md",
+                "file": "3 - Tags/Tags.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Design Heuristics"
+              "title": "Tags"
             }
           }
         ]
@@ -27,15 +27,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "80ba19933593c3fd",
+    "id": "b3308bfb0aea94d7",
     "type": "split",
     "children": [
       {
-        "id": "ea4661164457137a",
+        "id": "88ba4e0760cf9fad",
         "type": "tabs",
         "children": [
           {
-            "id": "dc750b8ba71ba687",
+            "id": "09b2928ed4e2818c",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -48,12 +48,12 @@
             }
           },
           {
-            "id": "c936df72e094e7c9",
+            "id": "40bba4b85fe72d81",
             "type": "leaf",
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#Factory-Method-Pattern",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -65,7 +65,7 @@
             }
           },
           {
-            "id": "10f06e5bcca91e62",
+            "id": "641389f76f27120c",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -78,23 +78,23 @@
       }
     ],
     "direction": "horizontal",
-    "width": 289.5
+    "width": 300
   },
   "right": {
-    "id": "478d6295df77ea3a",
+    "id": "02e5c150bb02ea70",
     "type": "split",
     "children": [
       {
-        "id": "0c2dad9dff814d6c",
+        "id": "37989bd6b3b13447",
         "type": "tabs",
         "children": [
           {
-            "id": "9d1f8805305ae9d5",
+            "id": "030886afd66f167c",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "6 - Main Notes/Exceptions.md",
+                "file": "3 - Tags/Tags.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,46 +104,51 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Exceptions"
+              "title": "Backlinks for Tags"
             }
           },
           {
-            "id": "c24f0254765a7173",
+            "id": "a46ce15112fc5462",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "6 - Main Notes/Exceptions.md",
+                "file": "3 - Tags/Tags.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Exceptions"
+              "title": "Outgoing links from Tags"
             }
           },
           {
-            "id": "ecafaa4ade821482",
+            "id": "afca32813cada774",
             "type": "leaf",
             "state": {
               "type": "tag",
               "state": {
                 "sortOrder": "frequency",
-                "useHierarchy": true
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-tags",
               "title": "Tags"
             }
           },
           {
-            "id": "1767d282e5c36b8b",
+            "id": "056bbd0f9f3fd020",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "6 - Main Notes/Exceptions.md"
+                "file": "3 - Tags/Tags.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Exceptions"
+              "title": "Outline of Tags"
             }
           }
         ]
@@ -163,51 +168,18 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "10ff683476a450c8",
+  "active": "ca51f19ec5650772",
   "lastOpenFiles": [
-    "6 - Main Notes/Modeling Rules (Heuristic).canvas",
-    "6 - Main Notes/Design Heuristics.md",
-    "6 - Main Notes/Exceptions.md",
-    "6 - Main Notes/Object Contracts.md",
+    "6 - Main Notes/Untitled.md",
     "3 - Tags/Tags.md",
-    "6 - Main Notes/Dynamic Method Lookup.md",
-    "6 - Main Notes/State Programming Pattern.md",
-    "6 - Main Notes/Test-driven Development.md",
-    "6 - Main Notes/Proxy Programming Pattern.md",
-    "6 - Main Notes/IDIOM vs Framework vs Design Pattern.md",
-    "6 - Main Notes/Decorator Programming Pattern.md",
-    "6 - Main Notes/Object Recursion Pattern.md",
-    "6 - Main Notes/Object Oriented Paradigm.md",
-    "6 - Main Notes/Design Code Refactoring.md",
-    "6 - Main Notes/Relationship of Knowledge.md",
     "5 - Templates/Full Note.md",
-    "6 - Main Notes/Adapter Programming Pattern.md",
-    "6 - Main Notes/Builder Programming Pattern.md",
-    "6 - Main Notes/Visitor Programming Pattern.md",
-    "6 - Main Notes/Singleton Programming Pattern.md",
-    "6 - Main Notes/Option Programming Pattern.md",
-    "6 - Main Notes/Factory Programming Pattern.md",
-    "6 - Main Notes/Composite Programming Pattern.md",
-    "6 - Main Notes/Abstract Factory Programming Pattern.md",
-    "6 - Main Notes/Replace Method with Method Object.md",
-    "1 - Rough Notes/Automated Refactoring.md",
-    "6 - Main Notes/Design",
-    "6 - Main Notes/Aristotle Model.canvas",
-    "2 - Source Material/Definition of Software.canvas",
-    "7 - Resources/Definition of Software/Accidental Complexity.png",
-    "7 - Resources/Definition of Software",
+    "Welcome.md",
     "7 - Resources",
-    "7 - Resources/Definition of Software/smalltalk 2.png",
-    "7 - Resources/Definition of Software/Go.png",
-    "7 - Resources/Definition of Software/java-pre-1.8.png",
-    "7 - Resources/Definition of Software/smalltalk 1.png",
-    "7 - Resources/Definition of Software/smalltalk.png",
-    "7 - Resources/Definition of Software/software-definition.png",
     "6 - Main Notes",
     "5 - Templates",
     "4 - Indexes",
     "3 - Tags",
-    "1 - Rough Notes",
-    "2 - Source Material"
+    "2 - Source Material",
+    "1 - Rough Notes"
   ]
 }
