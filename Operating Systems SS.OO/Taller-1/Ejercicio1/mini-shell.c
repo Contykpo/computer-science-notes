@@ -13,11 +13,10 @@ static int run(char ***progs, size_t count)
 	int status;
 
 	//Reservo memoria para el arreglo de pids
-	//TODO: Guardar el PID de cada proceso hijo creado en children[i]
 	pid_t *children = malloc(sizeof(*children) * count);
 
 	// [read_fd, write_fd].
-	int pipes[count - 1][2];
+	int (*pipes)[2] = malloc(sizeof(*pipes) * (count -1));
 
 	// Creamos los pipes necesarios.
 	for (int i = 0; i < count - 1; i++)
@@ -28,10 +27,6 @@ static int run(char ***progs, size_t count)
 			return -1;
 		}
 	}
-
-	//TODO: Para cada proceso hijo:
-			//1. Redireccionar los file descriptors adecuados al proceso
-			//2. Ejecutar el programa correspondiente
 
 	for (int i = 0; i < count; i++)
 	{
@@ -48,6 +43,8 @@ static int run(char ***progs, size_t count)
 			// Se redirecciona la entrada excepto por el primer proceso.
 			if (i > 0)
 			{
+				close(pipes[i-1][PIPE_WRITE]);
+				
 				if (dup2(pipes[i - 1][PIPE_READ], STD_INPUT) < 0)
 				{
 					perror("dup2 read");
@@ -73,6 +70,9 @@ static int run(char ***progs, size_t count)
 			}
 
 			// Se ejecuta el comando.
+
+			printf("%s, %S", progs[i][0], progs[i]); 
+
 			execvp(progs[i][0], progs[i]);
 			perror("execvp");
 			exit(EXIT_FAILURE);
@@ -102,6 +102,7 @@ static int run(char ***progs, size_t count)
 	
 	r = 0;
 	free(children);
+	free(pipes);
 
 	return r;
 }
@@ -119,6 +120,8 @@ int main(int argc, char **argv)
 	
 	int programs_count;
 	char*** programs_with_parameters = parse_input(argv, &programs_count);
+
+	if (programs_count < 1) { return 0; }
 
 	printf("status: %d\n", run(programs_with_parameters, programs_count));
 
