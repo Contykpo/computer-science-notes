@@ -5,17 +5,22 @@
 #include <linux/fs.h>
 #include <linux/device.h>
 
+#define DEVICE_NAME "nulo"
+
 static ssize_t nulo_read(struct file *filp, char __user *data, size_t s, loff_t *off) {
-  return 0;
+    // Simula que no hay nada que leer (como /dev/null)
+    return 0;
 }
 
 static ssize_t nulo_write(struct file *filp, const char __user *data, size_t s, loff_t *off) {
-  return 0;
+    // Simula que acepta todos los bytes (como /dev/null)
+    return s;
 }
 
 static struct file_operations nulo_operaciones = {
-  .owner = THIS_MODULE,
-  // Completar
+    .owner = THIS_MODULE,
+    .read = nulo_read,
+    .write = nulo_write,
 };
 
 static struct cdev nulo_device;
@@ -23,14 +28,49 @@ static dev_t major;
 static struct class *nulo_class;
 
 static int __init hello_init(void) {
-  
-  /* Completar */
-	
-  return 0;
+    int err;
+
+    // Reservar un número mayor dinámico
+    err = alloc_chrdev_region(&major, 0, 1, DEVICE_NAME);
+    if (err < 0) {
+        printk(KERN_ALERT "No se pudo asignar major\n");
+        return err;
+    }
+
+    // Inicializar y registrar el cdev
+    cdev_init(&nulo_device, &nulo_operaciones);
+    nulo_device.owner = THIS_MODULE;
+
+    err = cdev_add(&nulo_device, major, 1);
+    if (err < 0) {
+        unregister_chrdev_region(major, 1);
+        printk(KERN_ALERT "No se pudo agregar el cdev\n");
+        return err;
+    }
+
+    // Crear clase para udev
+    nulo_class = class_create(THIS_MODULE, DEVICE_NAME);
+    if (IS_ERR(nulo_class)) {
+        cdev_del(&nulo_device);
+        unregister_chrdev_region(major, 1);
+        printk(KERN_ALERT "No se pudo crear clase\n");
+        return PTR_ERR(nulo_class);
+    }
+
+    // Crear el dispositivo en /dev/nulo
+    device_create(nulo_class, NULL, major, NULL, DEVICE_NAME);
+
+    printk(KERN_INFO "/dev/nulo cargado correctamente\n");
+    return 0;
 }
 
 static void __exit hello_exit(void) {
-  /* Completar */
+    // Eliminar dispositivo y liberar recursos
+    device_destroy(nulo_class, major);
+    class_destroy(nulo_class);
+    cdev_del(&nulo_device);
+    unregister_chrdev_region(major, 1);
+    printk(KERN_INFO "/dev/nulo descargado\n");
 }
 
 module_init(hello_init);
