@@ -7,6 +7,17 @@
 #include <iostream>
 #include <cstdlib>
 
+#define DIRECT_BLOCK_COUNT 12
+#define INDIRECT_BLOCK_COUNT 1
+#define DOUBLE_INDIRECT_BLOCK_COUNT 1
+
+#define BLOCK_SIZE (uint32_t)(1024 << _superblock->log_block_size)
+#define LBA_ADDRESS_SIZE (uint32_t)4
+#define LBA_ADDRESSES_PER_BLOCK (uint32_t)(BLOCK_SIZE / LBA_ADDRESS_SIZE)
+#define INODES_PER_BLOCK (BLOCK_SIZE / sizeof(Ext2FSInode))
+#define BLOCKS_PER_INODE (uint32_t)(DIRECT_BLOCK_COUNT + INDIRECT_BLOCK_COUNT * LBA_ADDRESSES_PER_BLOCK + (DOUBLE_INDIRECT_BLOCK_COUNT * LBA_ADDRESSES_PER_BLOCK * LBA_ADDRESSES_PER_BLOCK))
+
+
 Ext2FS::Ext2FS(HDD & disk, unsigned char pnumber) : _hdd(disk), _partition_number(pnumber)
 {
 	assert(pnumber <= 3);
@@ -278,119 +289,59 @@ unsigned int Ext2FS::blockaddr2sector(unsigned int block)
  **/
 struct Ext2FSInode * Ext2FS::load_inode(unsigned int inode_number)
 {
-	// TODO: Ejercicio 2
+	//TODO: Ejercicio 2
+	uint32_t blockgroup_idx = blockgroup_for_inode(inode_number);
 
-    assert(inode_number > 0 && inode_number <= _superblock->inodes_count);
+	uint32_t inode_idx = blockgroup_inode_index(inode_number);
 
-    // Determinamos el block group del inodo.
-    unsigned int block_group_num = blockgroup_for_inode(inode_number);
+	uint32_t inode_idx_in_block = inode_idx % INODES_PER_BLOCK;
 
-    // Determinamos el indice del inodo dentro del block group.
-    unsigned int index_in_group = blockgroup_inode_index(inode_number);
+	uint32_t inode_table_idx = inode_idx / INODES_PER_BLOCK;
 
-    // Obtenemos el descriptor del block group.
-    Ext2FSBlockGroupDescriptor *bg_desc = block_group(block_group_num);
+	Ext2FSBlockGroupDescriptor* bg = block_group(blockgroup_idx);
 
-    // Posicion de la tabla de inodos en bloques.
-    unsigned int inode_table_block = bg_desc->inode_table;
+	Ext2FSInode* inode = NULL;
 
-    // Tamaño del bloque.
-    unsigned int block_size = 1024 << _superblock->log_block_size;
-    unsigned int sectors_per_block = block_size / SECTOR_SIZE;
-    // Tamaño del inodo.
-    unsigned int inode_size = _superblock->inode_size;
-    // Offset dentro de la tabla.
-    unsigned int offset_in_table = index_in_group * inode_size;
+	{
+		Ext2FSInode block_buffer[INODES_PER_BLOCK];
 
-    // Bloque que contiene el inodo.
-    unsigned int block_offset = offset_in_table / block_size;
-    unsigned int offset_in_block = offset_in_table % block_size;
+		read_block(bg->inode_table + inode_table_idx, (unsigned char*)&block_buffer);
 
-    // Sector LBA donde comienza la tabla de inodos:
-    const PartitionEntry & pentry = _hdd[_partition_number];
-    unsigned int inode_table_lba = pentry.start_lba() + (inode_table_block * sectors_per_block);
+		inode = new Ext2FSInode(block_buffer[inode_idx_in_block]);
+	}
 
-    // Sector donde esta el bloque que contiene el inodo.
-    unsigned int block_lba = inode_table_lba + (block_offset * sectors_per_block);
-
-    // Leemos el bloque que contiene el inodo.
-    unsigned char * buffer = new unsigned char[block_size];
-    for (unsigned int i = 0; i < sectors_per_block; i++)
-    {
-        _hdd.read(block_lba + i, buffer + (i * SECTOR_SIZE));
-    }
-
-    // Copiamos el inodo desde el buffer:
-    Ext2FSInode * inode = new Ext2FSInode;
-    std::memcpy(inode, buffer + offset_in_block, sizeof(Ext2FSInode));
-
-    delete[] buffer;
-
-    return inode;
+	return inode;
 }
 
-unsigned int Ext2FS::get_block_address(struct Ext2FSInode *inode, unsigned int block_number)
+unsigned int Ext2FS::get_block_address(struct Ext2FSInode * inode, unsigneExt2FSDirEntryd int block_number)
 {
-    //TODO: Ejercicio 1
-	
-	// Obtenemos el tamaño de bloque y sectores por bloque.
-    unsigned int block_size = 1024 << _superblock->log_block_size;
-    unsigned int sectors_per_block = block_size / SECTOR_SIZE;
+	if(block_number < DIRECT_BLOCK_COUNT)
+		return inode->block[block_number];
 
-    // Bloques Directos 0 al 11.
-    if (block_number < 12) {
-        return inode->block[block_number];
-    }
+	block_number -= DIRECT_BLOCK_COUNT;
 
-    // Bloque Indirecto Simple (12):
-	
-	// Numero de punteros por bloque.
-    unsigned int indirect_block_entries = block_size / sizeof(unsigned int);
-    if (block_number < 12 + indirect_block_entries)
+	if(block_number < LBA_ADDRESSES_PER_BLOCK){
+		
+		unsigned int block_buffer[LBA_ADDRESSES_PER_BLOCK];
+
+		read_block(inode->block[12], (unsigned char*)&block_buffer);
+
+		return block_buffer[block_number];
+	}
+
+	block_number -= LBA_ADDRESSES_PER_BLOCK;
+
 	{
-        // Lee el bloque indirecto.
-        unsigned char *indirect_block = new unsigned char[block_size];
-        read_block(inode->block[12], indirect_block);
+		uint32_t master_table_index = (uint32_t)(block_number / LBA_ADDRESSES_PER_BLOCK);
 
-        // Obtiene el puntero.
-        unsigned int *block_pointers = (unsigned int *)indirect_block;
-        unsigned int index = block_number - 12;
-        unsigned int lba = block_pointers[index];
+		unsigned int block_buffer[LBA_ADDRESSES_PER_BLOCK];
 
-        delete[] indirect_block;
-        return lba;
-    }
+		read_block(inode->block[13], (unsigned char*)&block_buffer);
 
-    // Bloque Indirecto Doble (13):
+		read_block(block_buffer[master_table_index], (unsigned char*)&block_buffer);
 
-    block_number -= (12 + indirect_block_entries);
-    unsigned int double_indirect_block_entries = indirect_block_entries * indirect_block_entries;
-    if (block_number < double_indirect_block_entries)
-	{
-        // Lee el bloque doble indirecto.
-        unsigned char *double_indirect_block = new unsigned char[block_size];
-        read_block(inode->block[13], double_indirect_block);
-        unsigned int *first_level = (unsigned int *)double_indirect_block;
-
-        // Indices de los niveles.
-        unsigned int first_index = block_number / indirect_block_entries;
-        unsigned int second_index = block_number % indirect_block_entries;
-
-        // Lee el bloque de segundo nivel.
-        unsigned char *second_level_block = new unsigned char[block_size];
-        read_block(first_level[first_index], second_level_block);
-        unsigned int *second_level = (unsigned int *)second_level_block;
-
-        unsigned int lba = second_level[second_index];
-
-        delete[] double_indirect_block;
-        delete[] second_level_block;
-        return lba;
-    }
-
-    // Si llegamos hasta aca, el bloque esta fuera del rango permitido, sin implementar triple indireccion.
-    std::cerr << "Error: bloque fuera de rango (" << block_number << ")." << std::endl;
-    return 0;
+		return block_buffer[block_number % LBA_ADDRESSES_PER_BLOCK];
+	}
 }
 
 void Ext2FS::read_block(unsigned int block_address, unsigned char * buffer)
@@ -402,11 +353,11 @@ void Ext2FS::read_block(unsigned int block_address, unsigned char * buffer)
 }
 
 // Los bloques de datos del inodo del directorio se leen directamente y analizan los bytes:
-// Desplazamiento / Tamaño (bytes) / Descripción
+// Desplazamiento | Tamaño (bytes) | Descripción
 // 0 4 Numero de inodo.
 // 4 2 Longitud total de la entrada record length.
 // 6 1 Longitud del nombre.
-// 7 1 Tipo de archivo (EXT2 solo v2).
+// 7 1 Tipo de archivo.
 // 8 variable Nombre del archivo.
 struct Ext2FSInode * Ext2FS::get_file_inode_from_dir_inode(struct Ext2FSInode * from, const char * filename)
 {
@@ -418,23 +369,25 @@ struct Ext2FSInode * Ext2FS::get_file_inode_from_dir_inode(struct Ext2FSInode * 
 	//TODO: Ejercicio 3
 
     unsigned int block_size = 1024 << _superblock->log_block_size;
-    unsigned char * block = new unsigned char[block_size];
+    unsigned char block_buffer[BLOCK_SIZE];
 
 	// Solo manejaremos los bloques directos por simplicidad.
-    for (unsigned int i = 0; i < 12; i++)
+    for (unsigned int i = 0; i < from->blocks; i++)
 	{
 		// Avanza si no hay un bloque asignado.
         if (from->block[i] == 0)
             continue;
 
-        read_block(from->block[i], block);
+        read_block(get_block_address(from, i), block_buffer);
 
         unsigned int offset = 0;
+		int bytes_read = 0;
+		int64_t file_size = (int64_t)(from->file_acl) << 32 | from->size;
 
-        while (offset < block_size)
+        while (offset < block_size && bytes_read < file_size)
 		{
             // Leemos el numero de inodo (4 bytes).
-            uint32_t inode_num = *(uint32_t *)(block + offset);
+            uint32_t inode_num = *(uint32_t *)(block_buffer + offset);
             if (inode_num == 0)
 			{
 				// Avanza solo si esta corrupto.
@@ -443,26 +396,40 @@ struct Ext2FSInode * Ext2FS::get_file_inode_from_dir_inode(struct Ext2FSInode * 
             }
 
             // Longitud total de entrada (2 bytes).
-            uint16_t rec_len = *(uint16_t *)(block + offset + 4);
+            uint16_t rec_len = *(uint16_t *)(block_buffer + offset + 4);
+
+			auto a = (Ext2FSDirEntry*)(block_buffer + offset);
+
+			// Evitamos loopear infinitamente si el bloque esta corrupto o mal formateado.
+			if (rec_len == 0)
+            {
+                std::cerr << "Error: rec_len = 0 en bloque " << i << std::endl;
+                break;
+            }
+
             // Longitud de nombre (1 byte).
-            uint8_t name_len = *(uint8_t *)(block + offset + 6);
+            uint8_t name_len = *(uint8_t *)(block_buffer + offset + 6);
             // Nombre (name_len bytes).
-            std::string entry_name(reinterpret_cast<char *>(block + offset + 8), name_len);
+            std::string entry_name(reinterpret_cast<char *>(block_buffer + offset + 8), name_len);
+
+			// Debug:
+			std::cerr << "Buscando '" << filename << "', comparando con '" << entry_name << "'\n";
 
             // Comparamos con el filename buscado.
             if (entry_name == filename)
 			{
-                delete[] block;
                 return load_inode(inode_num);
             }
 
             // Avanza a la siguiente entrada.
             offset += rec_len;
+			bytes_read += rec_len;
         }
     }
 
-    delete[] block;
 	// Archivo no encontrado.
+	std::cerr << "Archivo '" << filename << "' no encontrado en el directorio\n";
+
     return NULL;
 }
 
@@ -499,8 +466,8 @@ fd_t Ext2FS::open(const char * path, const char * mode)
 
 	// We ignore mode
 	struct Ext2FSInode * inode = inode_for_path(path);
-	assert(inode != NULL);
-	std::cerr << *inode << std::endl;
+	//assert(inode != NULL);
+	//std::cerr << *inode << std::endl;
 
 	if(inode == NULL)
 		return -1;
