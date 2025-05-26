@@ -401,6 +401,13 @@ void Ext2FS::read_block(unsigned int block_address, unsigned char * buffer)
 		_hdd.read(blockaddr2sector(block_address)+i, buffer+i*SECTOR_SIZE);
 }
 
+// Los bloques de datos del inodo del directorio se leen directamente y analizan los bytes:
+// Desplazamiento / Tamaño (bytes) / Descripción
+// 0 4 Numero de inodo.
+// 4 2 Longitud total de la entrada record length.
+// 6 1 Longitud del nombre.
+// 7 1 Tipo de archivo (EXT2 solo v2).
+// 8 variable Nombre del archivo.
 struct Ext2FSInode * Ext2FS::get_file_inode_from_dir_inode(struct Ext2FSInode * from, const char * filename)
 {
     if (from == NULL)
