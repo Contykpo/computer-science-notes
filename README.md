@@ -7,7 +7,7 @@ Notes and useful media related to subjects and fields of study in Computer Scien
 ### Obsidian-Vaults for each subject:
 
 - [Computer Architecture](https://github.com/Contykpo/computer-science-notes/tree/main/Computer%20Architecture/).
-- [Operating Systems](https://github.com/Contykpo/computer-science-notes/tree/main/Operating%20Systems/).
+- [Operating Systems](https://github.com/Contykpo/computer-science-notes/tree/main/Operating%20Systems%20SS.OO).
 - [Software Engineering](https://github.com/Contykpo/computer-science-notes/tree/main/Software%20Engineering/).
 - [Formal Languages and Automata Theory](https://github.com/Contykpo/computer-science-notes/tree/main/Formal%20Languages/).
 - [Architecture of Web Applications](https://github.com/Contykpo/computer-science-notes/tree/main/Web%20Applications/).
