@@ -1,0 +1,30 @@
+{
+	"nodes":[
+		{"id":"e77092a98c6dd0d9","type":"group","x":-160,"y":400,"width":697,"height":260,"color":"2","label":"Interception of Information"},
+		{"id":"a9db5224ca2d9a14","type":"group","x":-160,"y":720,"width":697,"height":260,"color":"2","label":"Interception of Information"},
+		{"id":"563604e0ce90d18d","type":"group","x":-160,"y":1040,"width":697,"height":260,"color":"2","label":"Fabrication of Information"},
+		{"id":"58f469424a39c54b","type":"group","x":-160,"y":-52,"width":697,"height":100,"color":"5","label":"Normal Flow of Information"},
+		{"id":"2586c51ed9a6d372","type":"group","x":-160,"y":240,"width":697,"height":100,"color":"2","label":"Interruption of the Flow of Information"},
+		{"id":"ec639d1d53f8d29f","type":"text","text":"Destination of the Information","x":267,"y":-32,"width":250,"height":60},
+		{"id":"a93a327aa6fec021","type":"text","text":"Origin of the Information","x":-140,"y":-32,"width":250,"height":60},
+		{"id":"04a8e220373d88cd","type":"text","text":"Destination of the Information","x":267,"y":260,"width":250,"height":60},
+		{"id":"0fd771c7b1d0e5ad","type":"text","text":"Origin of the Information","x":-140,"y":260,"width":250,"height":60},
+		{"id":"8a62b4296765ea71","type":"text","text":"Destination of the Information","x":267,"y":420,"width":250,"height":60},
+		{"id":"eb1a666cd536b6af","type":"text","text":"Origin of the Information","x":-140,"y":420,"width":250,"height":60},
+		{"id":"6710cd96e08b49cb","type":"text","text":"Intruder","x":138,"y":560,"width":129,"height":60},
+		{"id":"2f46348ed7592412","type":"text","text":"Destination of the Information","x":267,"y":740,"width":250,"height":60},
+		{"id":"828d988e980e6398","type":"text","text":"Origin of the Information","x":-140,"y":740,"width":250,"height":60},
+		{"id":"a38022da4c782ee8","type":"text","text":"Intruder","x":138,"y":880,"width":129,"height":60},
+		{"id":"4497e3945eff53d2","type":"text","text":"Destination of the Information","x":267,"y":1060,"width":250,"height":60},
+		{"id":"ab11792a9408c98d","type":"text","text":"Origin of the Information","x":-140,"y":1060,"width":250,"height":60},
+		{"id":"abb0fe72218b2c50","type":"text","text":"Intruder","x":138,"y":1200,"width":129,"height":60}
+	],
+	"edges":[
+		{"id":"8aea775820b9c460","fromNode":"a93a327aa6fec021","fromSide":"right","toNode":"ec639d1d53f8d29f","toSide":"left","color":"5"},
+		{"id":"d3f2e7c68692480a","fromNode":"eb1a666cd536b6af","fromSide":"right","toNode":"6710cd96e08b49cb","toSide":"top","color":"2"},
+		{"id":"00e7fbeec49db4ac","fromNode":"eb1a666cd536b6af","fromSide":"right","toNode":"8a62b4296765ea71","toSide":"left","color":"2"},
+		{"id":"edab858c6150e7aa","fromNode":"828d988e980e6398","fromSide":"right","toNode":"a38022da4c782ee8","toSide":"top","color":"2"},
+		{"id":"8ee0cfbf5c6dbc86","fromNode":"a38022da4c782ee8","fromSide":"top","toNode":"2f46348ed7592412","toSide":"left","color":"2"},
+		{"id":"7f880cc8cbdaa08f","fromNode":"abb0fe72218b2c50","fromSide":"top","toNode":"4497e3945eff53d2","toSide":"left","color":"2"}
+	]
+}
