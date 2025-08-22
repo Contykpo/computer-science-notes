@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "6 - Main Notes/General Concepts/Information and Security of information.md",
+                "file": "3 - Tags/Tags.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Information and Security of information"
+              "title": "Tags"
             }
           }
         ]
@@ -53,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#Factory-Method-Pattern",
+                "query": "tag:#Control-Access-Matrix",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -166,9 +166,19 @@
   },
   "active": "dc750b8ba71ba687",
   "lastOpenFiles": [
-    "6 - Main Notes/General Concepts",
+    "6 - Main Notes/Access Control/Mandatory Access Control.md",
+    "6 - Main Notes/Access Control/Reference Monitor.md",
     "3 - Tags/Tags.md",
+    "6 - Main Notes/Access Control/Types of Access Control.md",
+    "6 - Main Notes/Access Control/Some Definitions.md",
+    "6 - Main Notes/Access Control/Attribute-Based Access Control.md",
+    "6 - Main Notes/Access Control",
+    "6 - Main Notes/Access Control/Discretionary Access Control.md",
+    "6 - Main Notes/Access Control/Role-Based Access Control.md",
+    "6 - Main Notes/Access Control/Relationship-Based Access Control.md",
+    "6 - Main Notes/Access Control/System Protection Status.md",
     "6 - Main Notes/General Concepts/Information and Security of information.md",
+    "6 - Main Notes/General Concepts",
     "6 - Main Notes/General Concepts/Objectives of Information Security.md",
     "6 - Main Notes/General Concepts/Risk Assessment.md",
     "6 - Main Notes/General Concepts/Security Policies and Security Mechanisms.md",
@@ -185,15 +195,6 @@
     "6 - Main Notes/Object Contracts.md",
     "6 - Main Notes/Dynamic Method Lookup.md",
     "6 - Main Notes/State Programming Pattern.md",
-    "6 - Main Notes/Test-driven Development.md",
-    "6 - Main Notes/Proxy Programming Pattern.md",
-    "6 - Main Notes/IDIOM vs Framework vs Design Pattern.md",
-    "6 - Main Notes/Decorator Programming Pattern.md",
-    "6 - Main Notes/Object Recursion Pattern.md",
-    "6 - Main Notes/Object Oriented Paradigm.md",
-    "6 - Main Notes/Design Code Refactoring.md",
-    "6 - Main Notes/Relationship of Knowledge.md",
-    "6 - Main Notes/Adapter Programming Pattern.md",
     "6 - Main Notes/Design",
     "6 - Main Notes/Aristotle Model.canvas",
     "2 - Source Material/Definition of Software.canvas",
@@ -210,7 +211,6 @@
     "5 - Templates",
     "4 - Indexes",
     "3 - Tags",
-    "1 - Rough Notes",
-    "2 - Source Material"
+    "1 - Rough Notes"
   ]
 }
