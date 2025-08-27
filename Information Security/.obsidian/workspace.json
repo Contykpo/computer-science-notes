@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "3 - Tags/Tags.md",
+                "file": "6 - Main Notes/Hybrid Policy Models.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Tags"
+              "title": "Hybrid Policy Models"
             }
           }
         ]
@@ -53,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#Control-Access-Matrix",
+                "query": "tag:#Biba-Model",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -164,11 +164,19 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "dc750b8ba71ba687",
+  "active": "10ff683476a450c8",
   "lastOpenFiles": [
+    "6 - Main Notes/General Concepts/Security Policies and Security Mechanisms.md",
+    "6 - Main Notes/Hybrid Policy Models.md",
+    "6 - Main Notes/The Role of Trust.md",
+    "6 - Main Notes/Covert Channel.md",
+    "6 - Main Notes/BIBA Model.md",
+    "6 - Main Notes/Clark-Wilson Model.md",
+    "6 - Main Notes/Bell-Lapadula Security Model.md",
+    "6 - Main Notes/General Concepts/Information and Security of information.md",
+    "3 - Tags/Tags.md",
     "6 - Main Notes/Access Control/Mandatory Access Control.md",
     "6 - Main Notes/Access Control/Reference Monitor.md",
-    "3 - Tags/Tags.md",
     "6 - Main Notes/Access Control/Types of Access Control.md",
     "6 - Main Notes/Access Control/Some Definitions.md",
     "6 - Main Notes/Access Control/Attribute-Based Access Control.md",
@@ -177,11 +185,9 @@
     "6 - Main Notes/Access Control/Role-Based Access Control.md",
     "6 - Main Notes/Access Control/Relationship-Based Access Control.md",
     "6 - Main Notes/Access Control/System Protection Status.md",
-    "6 - Main Notes/General Concepts/Information and Security of information.md",
     "6 - Main Notes/General Concepts",
     "6 - Main Notes/General Concepts/Objectives of Information Security.md",
     "6 - Main Notes/General Concepts/Risk Assessment.md",
-    "6 - Main Notes/General Concepts/Security Policies and Security Mechanisms.md",
     "6 - Main Notes/General Concepts/Vulnerabilities and Threats.md",
     "2 - Source Material/Types of Threats.canvas",
     "6 - Main Notes/Software Development.md",
@@ -189,12 +195,7 @@
     "4 - Indexes/Index.md",
     "1 - Rough Notes/Ideas from related topics.md",
     "1 - Rough Notes/Testing.md",
-    "6 - Main Notes/Design Heuristics.md",
     "6 - Main Notes/Modeling Rules (Heuristic).canvas",
-    "6 - Main Notes/Exceptions.md",
-    "6 - Main Notes/Object Contracts.md",
-    "6 - Main Notes/Dynamic Method Lookup.md",
-    "6 - Main Notes/State Programming Pattern.md",
     "6 - Main Notes/Design",
     "6 - Main Notes/Aristotle Model.canvas",
     "2 - Source Material/Definition of Software.canvas",

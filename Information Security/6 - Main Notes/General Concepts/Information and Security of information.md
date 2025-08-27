@@ -27,11 +27,21 @@ The **accuracy** and **completeness of the information** and **processing method
 
 For example: A newspaper may provide information obtained from the Casa Rosada but attribute it to an incorrect source. This is an example of information integrity, but with corrupted source integrity.
 
+Types of integrity:
+
+- **Data integrity**: we trust that the transport or storage medium does not alter the information.
+- **Origin integrity**: when the information is about the origin of something or about identity.
+
 #### - Availability:
 
 Ensures that authorized users have access to the information and related resources whenever they need them.
 
 For example: It is the last day of enrollment at the university, and a power outage occurs that lasts the entire day. The UPS systems work for 2 hours and then shut down the servers. Result: The late students are unable to enroll in their courses.
+
+Types of availability:
+
+- **Traditional**: access to the information is either granted or not.  
+- **Quality of service**: there is a committed level of service (SLA) that must be met.
 
 #### - Authenticity:
 
