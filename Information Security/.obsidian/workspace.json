@@ -20,8 +20,21 @@
               "icon": "lucide-file",
               "title": "Hybrid Policy Models"
             }
+          },
+          {
+            "id": "1c9c6300d624be9f",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.9.12"
+              },
+              "icon": "lucide-book-up",
+              "title": "Release Notes 1.9.12"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -164,7 +177,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "10ff683476a450c8",
+  "active": "1c9c6300d624be9f",
   "lastOpenFiles": [
     "6 - Main Notes/General Concepts/Security Policies and Security Mechanisms.md",
     "6 - Main Notes/Hybrid Policy Models.md",

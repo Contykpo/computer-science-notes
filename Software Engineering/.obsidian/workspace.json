@@ -4,24 +4,39 @@
     "type": "split",
     "children": [
       {
-        "id": "a81a9f254a8963bd",
+        "id": "a212b69fc2310d8d",
         "type": "tabs",
         "children": [
           {
-            "id": "10ff683476a450c8",
+            "id": "6a3de901c38666d9",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "1 - Rough Notes/Automated Refactoring.md",
+                "file": "6 - Main Notes/If Conditional Removal for Refactoring.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Automated Refactoring"
+              "title": "If Conditional Removal for Refactoring"
+            }
+          },
+          {
+            "id": "83986a09d2437564",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "6 - Main Notes/If Conditional Removal for Refactoring.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "If Conditional Removal for Refactoring"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -53,7 +68,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#Factory-Method-Pattern",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -164,37 +179,38 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "dc750b8ba71ba687",
+  "active": "83986a09d2437564",
   "lastOpenFiles": [
-    "1 - Rough Notes/Ideas from other more specific and deep notes.md",
-    "1 - Rough Notes/Testing.md",
-    "3 - Tags/Tags.md",
-    "6 - Main Notes/Design Heuristics.md",
-    "6 - Main Notes/Modeling Rules (Heuristic).canvas",
-    "6 - Main Notes/Exceptions.md",
-    "6 - Main Notes/Object Contracts.md",
-    "6 - Main Notes/Dynamic Method Lookup.md",
-    "6 - Main Notes/State Programming Pattern.md",
-    "6 - Main Notes/Test-driven Development.md",
+    "6 - Main Notes/Option Programming Pattern.md",
+    "6 - Main Notes/If Conditional Removal for Refactoring.md",
     "6 - Main Notes/Proxy Programming Pattern.md",
-    "6 - Main Notes/IDIOM vs Framework vs Design Pattern.md",
-    "6 - Main Notes/Decorator Programming Pattern.md",
-    "6 - Main Notes/Object Recursion Pattern.md",
-    "6 - Main Notes/Object Oriented Paradigm.md",
-    "6 - Main Notes/Design Code Refactoring.md",
     "6 - Main Notes/Relationship of Knowledge.md",
-    "5 - Templates/Full Note.md",
+    "6 - Main Notes/Replace Method with Method Object.md",
+    "6 - Main Notes/Untitled.base",
+    "6 - Main Notes/Aristotle Model.canvas",
+    "1 - Rough Notes/Testing.md",
+    "1 - Rough Notes/Ideas from other more specific and deep notes.md",
+    "1 - Rough Notes/Automated Refactoring.md",
+    "6 - Main Notes/Abstract Factory Programming Pattern.md",
     "6 - Main Notes/Adapter Programming Pattern.md",
     "6 - Main Notes/Builder Programming Pattern.md",
-    "6 - Main Notes/Visitor Programming Pattern.md",
-    "6 - Main Notes/Singleton Programming Pattern.md",
-    "6 - Main Notes/Option Programming Pattern.md",
-    "6 - Main Notes/Factory Programming Pattern.md",
+    "6 - Main Notes/Closures in SmallTalk.md",
     "6 - Main Notes/Composite Programming Pattern.md",
-    "6 - Main Notes/Abstract Factory Programming Pattern.md",
-    "6 - Main Notes/Replace Method with Method Object.md",
+    "6 - Main Notes/Decorator Programming Pattern.md",
+    "6 - Main Notes/Design Code Refactoring.md",
+    "6 - Main Notes/Design Heuristics.md",
+    "6 - Main Notes/Design Modeling.md",
+    "6 - Main Notes/Dynamic Method Lookup.md",
+    "6 - Main Notes/Exceptions.md",
+    "6 - Main Notes/Visitor Programming Pattern.md",
+    "6 - Main Notes/Variables and Pseudo-variables in Object Oriented Programming.md",
+    "6 - Main Notes/Test-driven Development.md",
+    "6 - Main Notes/State Programming Pattern.md",
+    "6 - Main Notes/Singleton Programming Pattern.md",
+    "3 - Tags/Tags.md",
+    "6 - Main Notes/Modeling Rules (Heuristic).canvas",
+    "6 - Main Notes/Object Contracts.md",
     "6 - Main Notes/Design",
-    "6 - Main Notes/Aristotle Model.canvas",
     "2 - Source Material/Definition of Software.canvas",
     "7 - Resources/Definition of Software/Accidental Complexity.png",
     "7 - Resources/Definition of Software",
